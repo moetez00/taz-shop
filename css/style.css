@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+#navt {
+    font-family: 'RocknRoll One', sans-serif;
+}
+footer div{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white;
+    font-style: oblique;
+}
+.navbar a{
+  font-size: 15px;
+}
+footer {
+    background-color: rgb(37, 37, 37);
+    margin-top: -7.8px;
+    margin-left: -7.8px;
+    margin-right: -7.8px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.form1 {
+    width: 1200px;
+}
+.card {
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+ max-width: 300px;
+ text-align: center;
+ font-family: arial;
+  margin-bottom: 30px;
+}
+.price{
+ color: gray;
+ font-size: 22px;
+}
+.bt{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover{
+ opacity: 0.7;
+}
+.prod ul{
+ list-style-type: none;
+ overflow: hidden;
+
+}
+form li{
+ display: block;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+ max-width: 200px;
+ max-height:200px;
+}
+.btt{
+  transform: translate(50px,-42px);
+  border: solid;
+  border-radius: 15px;
+  outline: 0;
+  padding: 7px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+.animdv {
+  position: relative;
+  animation: divmove 6s;
+  left: 280px;
+  animation-fill-mode: forwards;
+
+}
+@keyframes divmove{
+  0% {left: 200px;}
+  50% {left: -10px;}
+  100% {left: 0px;}
+}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}
+.col-md{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}

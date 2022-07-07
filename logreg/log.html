@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="icon" href="..\img\pics.png">
+  <title>Taz Store</title>
+  <script src='script.js'></script>
+  <link rel="stylesheet" href="..\css\style.css">
+  <link rel="stylesheet" href="..\css\styleb.css">
+  <link rel="stylesheet" type="text/css" href="stylelr.css">
+  <script src="..\js\jquery.js"></script>
+  <link rel="map" href="..\css\bootstrap.min.css.map">
+  <script src="..\js\javascript.js"></script>
+</head>
+<body>
+  <nav id="navt" class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" style="color: rgb(24, 185, 24);font-size: 27px;" href="..\index.html">Taz Store</a>
+        </div>
+      <ul class="nav navbar-nav">
+          <li><a href="..\index.html">Home</a></li>
+          <li><a href="..\contact.html">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="reg.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li class="active"><a href="log.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      </div>
+  </nav>
+  <br><br>
+<div style="margin-top: 63px" class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="regg.php" method="post">
+      <h1>Create Account</h1>
+      <div class="social-container">
+        <a style="text-decoration: none;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a style="text-decoration: none;" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a style="text-decoration: none;" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>or use your email for registration</span>
+      <input type="text" placeholder="Username" name="username" required/>
+      <input type="email" placeholder="Email" name="email" required/>
+      <input type="password" placeholder="Password" name="password" required/>
+      <button>Sign Up</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="logg.php" method="post">
+      <h1>Sign in</h1>
+      <div class="social-container">
+        <a style="text-decoration: none;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a style="text-decoration: none;" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a style="text-decoration: none;" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>or use your account</span>
+      <input type="text" name="email" placeholder="Email/Username" required/>
+      <input type="password" name="password" placeholder="Password" required/>
+      <a href="#">Forgot your password?</a>
+      <button>Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+  container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+  container.classList.remove("right-panel-active");
+});
+</script>  
+  <footer style="margin-top: 188px; margin-right: .5px">
+    <div style="text-align: center;">
+      Taz Shop
+      <br> 
+      © 2021 Copyright:Taz
+    </div>
+  </footer>
+</body>
+</html>
